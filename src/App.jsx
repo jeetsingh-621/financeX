@@ -13,19 +13,21 @@ import Footer from './components/Footer';
 
 
 function App() {
-const locomotiveScroll = new LocomotiveScroll();
+  const locomotiveScroll = new LocomotiveScroll();
   return (
-    <div  className='max-w-screen-2xl mx-auto min-h-screen text-white overflow-hidden bg-[#151515]'>
-      <Navbar/>
-      <Hero/>
-      <Marquees/>
-      <Ourservices/>
-      <Map/>
-      <Realtime/>
-      <Globalslider/>
-      <Grow/>
-      <Footer/>
+    <div className="bg-[#151515]">
+      <div className='max-w-[1400px] px-3 mx-auto text-white overflow-clip '>
+        <Navbar />
+        <Hero />
+        <Marquees />
+        <Ourservices />
+        <Map />
+        <Realtime />
+        <Globalslider />
+        <Grow />
+        <Footer />
 
+      </div>
     </div>
   )
 }

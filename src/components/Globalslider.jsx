@@ -127,7 +127,7 @@ function Globalslider() {
               return (
                 <div key={index} className="px-3 h-full">
                   <div
-                    className="bg-[#151515] text-white px-4 py-4  border-[1px] border-gray-400 h-full">
+                    className="bg-[#151515] text-white px-4 py-4 border-[1px] border-gray-400 h-full">
                     <p className="text-sm">
                       {item.para}
                     </p>
