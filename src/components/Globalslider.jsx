@@ -8,101 +8,101 @@ import { BiAccessibility } from "react-icons/bi";
 
 
 function Globalslider() {
-    var settings = {
-      dots: true,
-      className: "center",
-      infinite: true,
-      speed: 500,
-      swipeToSlide: true,
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      initialSlide: 0,
-      autoplay:true,
-      
-      autoplaySpeed: 4000,
-    
+  var settings = {
+    dots: true,
+    className: "center",
+    infinite: true,
+    speed: 500,
+    swipeToSlide: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+
+    autoplaySpeed: 4000,
+
     cssEase: "linear",
     pauseOnHover: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
 
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2,
-
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-      speed: 300,
-      autoplaySpeed: 6000,
-
-
-          }
         }
-      ]
-    };
-    
-    
-  const data= [
-    {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image.png", h4:"Ranveer" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image1.png", h4:"Mahesh" , h6:"CEO"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image2.png", h4:"Tony stark" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image3.png", h4:"Ranveer" , h6:"CEO"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image.png", h4:"Mahesh" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image1.png", h4:"Tony stark" , h6:"CEO"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image2.png", h4:"Tony stark" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image3.png", h4:"Ranveer" , h6:"CEO"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image.png", h4:"Ranveer" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image1.png", h4:"Mahesh" , h6:"CEO"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image2.png", h4:"Tony stark" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image3.png", h4:"Ranveer" , h6:"CEO"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image.png", h4:"Mahesh" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image1.png", h4:"Tony stark" , h6:"CEO"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image2.png", h4:"Tony stark" , h6:"Webflow Development"},
-  {para:" Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel" , image:"/public/images/image3.png", h4:"Ranveer" , h6:"CEO"}
-]
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
 
-    
-    //     const [currentImage,setcurrentImage]=useState(0);
-    
-    
-    // const nextImage = () => {
-    //     setcurrentImage((prevImage) => (prevImage === data.length - 1 ? 0 : prevImage + 1));
-    //   };
-    
-    //   const prevImage = () => {
-    //     setcurrentImage((prevImage) => (prevImage === 0 ? data.length - 1 : prevImage - 1));
-    //   };
-    //  useEffect(()=>{
-    //     const interval = setInterval(()=>{
-    //         nextImage()
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 300,
+          autoplaySpeed: 6000,
 
-    //     },3000);
-    //     return()=> clearInterval(interval);
-    //  },[]);
 
-    //  useEffect(()=>{
-    //     const interval = setInterval(()=>{
-    //         nextImage();
+        }
+      }
+    ]
+  };
 
-    //     },3000);
-    //     return()=> clearInterval(interval);
-    //  },[currentImage,nextImage])
+
+  const data = [
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image.png", h4: "Ranveer", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Mahesh", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image.png", h4: "Mahesh", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Tony stark", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image.png", h4: "Ranveer", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Mahesh", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image.png", h4: "Mahesh", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Tony stark", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" }
+  ]
+
+
+  //     const [currentImage,setcurrentImage]=useState(0);
+
+
+  // const nextImage = () => {
+  //     setcurrentImage((prevImage) => (prevImage === data.length - 1 ? 0 : prevImage + 1));
+  //   };
+
+  //   const prevImage = () => {
+  //     setcurrentImage((prevImage) => (prevImage === 0 ? data.length - 1 : prevImage - 1));
+  //   };
+  //  useEffect(()=>{
+  //     const interval = setInterval(()=>{
+  //         nextImage()
+
+  //     },3000);
+  //     return()=> clearInterval(interval);
+  //  },[]);
+
+  //  useEffect(()=>{
+  //     const interval = setInterval(()=>{
+  //         nextImage();
+
+  //     },3000);
+  //     return()=> clearInterval(interval);
+  //  },[currentImage,nextImage])
 
   return (
     <div className="w-full h-[70vh]  md-[45rem] sm:h-[90vh] sm:my-20 my-6  text-black py-5 sm:py-10 bg-[#CBFC01]">
@@ -121,30 +121,32 @@ function Globalslider() {
       <div className="swiper mt-10 sm:mt-20 lg:mt-0">
 
         <div className="swiper-wrapper w-full  justify-center  mx-auto h-[40vh] px-8 sm:px-0 lg:px-0    ">
-      <div className="px-5"></div>
+          <Slider {...settings} className="mx-12 h-full">
 
-      <Slider {...settings} className="mx-20">
-        
-            {data.map((item,index)=>  <div 
-               key={index}
-                className="bg-[#151515] flex gap-20 text-white px-4 py-4   border-[1px] border-gray-400 w-64 h-full ">
-            <p className="text-sm">
-             {item.para}
-            </p>
+            {data.map((item, index) => {
+              return (
+                <div key={index} className="px-3 h-full">
+                  <div
+                    className="bg-[#151515] text-white px-4 py-4  border-[1px] border-gray-400 h-full">
+                    <p className="text-sm">
+                      {item.para}
+                    </p>
 
-            <div className="pt-5 flex gap-4 leading-tight text-sm">
-              <div className="w-11 h-11 rounded-full overflow-hidden ">
-                <img className="w-full rounded-full h-full object-cover" src={item.image} alt="" />
-              </div>
-              <div>
-                <h4>{item.h4}</h4>
-                <h6 className="text-gray-300">{item.h6}</h6>
-              </div>
-            </div>
-          </div>)}
-
+                    <div className="pt-5 flex gap-4 leading-tight text-sm">
+                      <div className="w-11 h-11 rounded-full overflow-hidden ">
+                        <img className="w-full rounded-full h-full object-cover" src={item.image} alt="" />
+                      </div>
+                      <div>
+                        <h4>{item.h4}</h4>
+                        <h6 className="text-gray-300">{item.h6}</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
           </Slider>
-        
+
         </div>
 
         {/* <div className="w-full text-center "> */}
