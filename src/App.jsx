@@ -9,6 +9,7 @@ import Realtime from './components/Realtime';
 import Globalslider from './components/Globalslider';
 import Grow from './components/Grow';
 import Footer from './components/Footer';
+import Footerend from './components/Footerend';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Globalslider />
         <Grow />
         <Footer />
+        <Footerend/>
 
       </div>
     </div>
