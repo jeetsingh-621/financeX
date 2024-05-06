@@ -1,6 +1,6 @@
 import { animate, motion, stagger, useAnimate } from 'framer-motion'
 import React from 'react'
-import abc from '../../public/Images/map.png'
+import map from '../../public/Images/map.png'
 
 function Map() {
     
@@ -41,7 +41,7 @@ function Map() {
 
 
         <div className='h-full w-full '>
-            <img className='w-full h-full object-contain' src={abc} alt="" />
+            <img className='w-full h-full object-contain' src={map} alt="" />
 
         </div>
     </div>
