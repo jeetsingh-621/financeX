@@ -1,11 +1,40 @@
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 
 
 function Hero() {
+    useGSAP(()=>{
+        gsap.from('.left',{
+            opacity:0,
+            duration:1.5,
+            x:-200,
+            delay:0.5
+        })
+        gsap.from('.right',{
+            opacity:0,
+            duration:1.5,
+            x:200,
+            delay:0.5
+        })
+        gsap.from('.text',{
+            opacity:0,
+            duration:1.5,
+            x:100,
+            delay:0.5
+        })
+        // gsap.from('.btn',{
+        //     opacity:0,
+        //     duration:1.5,
+        //     // x:100,
+        //     delay:0.5
+        // })
+    })
   return (
+    <div data-scroll data-scroll-speed='-0.05' data-scroll-direction='horizontal' >
     <div className='w-full px-2   h-full pt-0 md:pt-6 lg:pt-8 sm:px-4 lg:px-4 sm:flex flex flex-col md:flex-row '>
-        <div className='left sm:w-1/2 w-full sm:py-20 py-10 '>
+        <div data-scroll  className='  left sm:w-1/2 w-full sm:py-20 py-10 '>
             <h3 className='lg:text-xl sm:text-xl text-sm text-[#CBFC01]'>Welcome! Future Platform</h3>
             <div className='sm:text-6xl text-4xl md:text-5xl lg:text-6xl font-bold leading-none py-5 sm:py-2 sm:leading-tight'>
                 <h2>The World's</h2>
@@ -23,18 +52,19 @@ function Hero() {
             </div>
         </div>
 
-        <div className='right w-full  sm:w-1/2 py-10  ml-2 sm:ml-0  flex justify-end relative'>
+        <div data-scroll  className='right w-full  sm:w-1/2 py-10  ml-2 sm:ml-0  flex justify-end relative'>
             <div className='w-full  h-full absolute -left-5 sm:left-28 '>
-                <img className='sm:w-[38rem]  absolute z-[1] md:-left-28 xl:top-6  xl:-left-12 md:top-2 top-0 h-fit   object-cover' src="./public/images/Frame.png" alt="" />
-                <img className='sm:w-[38rem]  object-cover top-12 absolute bottom-24 md:top-16 lg:top-28 md:-left-28  xl:-left-12   left-0 ' src="./public/images/Frame.png" alt="" />
+                <img className='sm:w-[38rem]  absolute z-[1] md:-left-28 xl:top-6  xl:-left-12 md:top-2 top-0 h-fit   object-cover' src="../public/images/Frame.png" alt="" />
+                <img className='sm:w-[38rem]  object-cover top-12 absolute bottom-24 md:top-16 lg:top-28 md:-left-28  xl:-left-12   left-0 ' src="../public/images/Frame.png" alt="" />
             </div>
-            <img  className='hidden md:block sm:w-[20rem] md:w-[14rem]  lg:w-[23rem] w-[14rem] object-cover h-fit' src="/public/images/Ellipse.png" alt="" />
+            <img  className='hidden md:block sm:w-[20rem] md:w-[14rem]  lg:w-[23rem] w-[14rem] object-cover h-fit' src="../public/images/Ellipse.png" alt="" />
 
 
 
 
         </div>
 
+    </div>
     </div>
   )
 }

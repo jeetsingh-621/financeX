@@ -91,14 +91,14 @@ function Globalslider() {
 
       <div className="swiper mt-10 py-5 md:mt-0 lg:py-10">
 
-        <div className="swiper-wrapper w-full  justify-center md:px-10  mx-auto  px-4 sm:px-0 lg:px-10    ">
+        <div className="swiper-wrapper w-full  justify-center md:px-10  mx-auto  px-7 sm:px-6 lg:px-10    ">
           <Slider {...settings} className=" h-full">
 
             {data.map((item, index) => {
               return (
-                <div key={index} className="px-4 lg:px-3  h-full">
+                <div key={index} className="px-2 lg:px-3  h-full">
                   <div
-                    className="bg-[#151515] text-white px-4 py-14 border-[1px] border-gray-400 h-full">
+                    className="bg-[#151515] text-white px-3 py-10 border-[1px] border-gray-400 h-full">
                     <p className="text-sm">
                       {item.para}
                     </p>

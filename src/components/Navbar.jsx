@@ -1,3 +1,6 @@
+import { useGSAP } from "@gsap/react";
+import { motion } from "framer-motion";
+import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -16,8 +19,37 @@ function Navbar() {
       document.body.classList.remove("overflow-hidden");
     };
   }, [showNavBar]);
+  
+  useGSAP(()=>{
+    var tl = gsap.timeline();
+  
+    // tl.from(".navbar h2",{
+    //   opacity:0,
+    //   y:-30,
+    //   duration:0.5,
+    //   delay:0.5
+      
+    // });
+    
+    gsap.from(".navbar h3 a",{
+      opacity:0,
+      y:-50,
+      duration:0.5,
+      stagger:0.2
+    });
+    tl.from(".navbar",{
+      opacity:0,
+      y:-50,
+      duration:1,
+      stagger:0.1
+    });
+   
+  
+
+  })
+  
   return (
-    <div className="w-full sticky z-[999] bg-[#151515] top-0 px-4 py-4 sm:py-7 flex items-center justify-between">
+    <div className="navbar  w-full sticky z-[999] bg-[#151515] top-0 px-4 py-4 sm:py-7 flex items-center justify-between">
       <h2 className="text-2xl font-[500]">FinanceX</h2>
 
       <div className="sm:flex hidden  lg:gap-14 text-gray-300 md:gap-6">
@@ -28,7 +60,7 @@ function Navbar() {
           </h3>
         ))}
       </div>
-      <div className="sm:flex hidden hover:text-black hover:font-semibold duration-300 hover:bg-[#CBFC01] gap-2 items-center  px-5 py-2 rounded-lg">
+      <div className="button sm:flex hidden hover:text-black hover:font-semibold duration-300 hover:bg-[#CBFC01] gap-2 items-center  px-5 py-2 rounded-lg">
         <button>Sign Up</button>
         <FaArrowRightLong />
       </div>

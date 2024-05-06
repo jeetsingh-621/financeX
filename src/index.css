@@ -6,3 +6,6 @@
     color: black;
     font-weight: 400;
 }
+.card:hover .button{
+    background-color: #FBFC01;
+}
