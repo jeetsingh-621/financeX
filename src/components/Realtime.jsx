@@ -3,6 +3,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { LuMapPin } from "react-icons/lu";
 import { TfiWorld } from "react-icons/tfi";
 import { GiNetworkBars } from "react-icons/gi";
+import Frame4 from '../../public/Images/Frame4.png';
+
 
 function Realtime() {
 
@@ -41,7 +43,7 @@ function Realtime() {
           <div className="md:w-full  sm:w-full sm:h-full md:h-full lg:w-[80%] lg:h-[80%]    absolute left-0 md:top-10 md:-rotate-45 lg:-rotate-0 md:left-0 lg:top-12 lg:left-28 xl:left-52">
             <img
               className="w-full h-full object-cover lg:object-contain "
-              src="/public/Images/Frame4.png"
+              src={Frame4}
               alt=""
             />
           </div>
