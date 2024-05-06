@@ -1,4 +1,8 @@
 import React from 'react'
+import linkedin from '../../public/Images/linkedin.png'
+import messenger from '../../public/Images/messenger.png'
+import twitter from '../../public/Images/twitter.png'
+import twoo from '../../public/Images/twoo.png'
 
 function Footer() {
   return (
@@ -11,10 +15,10 @@ function Footer() {
       
 
             <div className='icons flex gap-10 md:gap-2 py-3 md:justify-start justify-center lg:py-6'>
-              <img className='w-6 h-6  object-cover' src="/public/images/linkedin.png" alt="" />
-              <img className='w-6 h-6 object-cover' src="/public/images/messenger.png" alt="" />
-              <img className='w-6 h-6 object-cover' src="/public/images/twitter.png" alt="" />
-              <img className='w-6 h-6 object-cover' src="/public/images/twoo.png" alt="" />
+              <img className='w-6 h-6  object-cover' src={linkedin} alt="" />
+              <img className='w-6 h-6 object-cover' src={messenger} alt="" />
+              <img className='w-6 h-6 object-cover' src={twitter} alt="" />
+              <img className='w-6 h-6 object-cover' src={twoo} alt="" />
 
 
             </div>

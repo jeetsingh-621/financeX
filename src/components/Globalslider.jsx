@@ -3,6 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import images from '../../public/Images/image.png'
+import image1 from '../../public/Images/image1.png'
+import image2 from '../../public/Images/image2.png'
+import image3 from '../../public/Images/image3.png'
 
 
 
@@ -59,21 +62,21 @@ function Globalslider() {
 
   const data = [
     { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: images, h4: "Ranveer", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Mahesh", h6: "CEO" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image.png", h4: "Mahesh", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Tony stark", h6: "CEO" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image.png", h4: "Ranveer", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Mahesh", h6: "CEO" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image.png", h4: "Mahesh", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Tony stark", h6: "CEO" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" }
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image1, h4: "Mahesh", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image2, h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image3, h4: "Ranveer", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: images, h4: "Mahesh", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image1, h4: "Tony stark", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image2, h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image3, h4: "Ranveer", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: images, h4: "Ranveer", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image1, h4: "Mahesh", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image2, h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image3, h4: "Ranveer", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: images, h4: "Mahesh", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image1, h4: "Tony stark", h6: "CEO" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image2, h4: "Tony stark", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: image3, h4: "Ranveer", h6: "CEO" }
   ]
 
   return (
