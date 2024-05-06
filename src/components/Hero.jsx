@@ -2,7 +2,7 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
-import frame from '../../public/Images/frame.png'
+import frame from '../../public/Images/Frame.png'
 
 
 function Hero() {
