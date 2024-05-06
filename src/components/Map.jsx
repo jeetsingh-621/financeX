@@ -1,9 +1,19 @@
+import { animate, motion, stagger, useAnimate } from 'framer-motion'
 import React from 'react'
+import abc from '../../public/Images/map.png'
 
 function Map() {
+    
+    
   return (
     <div className='w-full flex    flex-col lg:flex-row  flex-shrink-0 my-10 xl:my-20 px-2 md:px-4 lg:px-4 py-10 xl:py-20 '>
-        <div className='w-full py-2   sm:py-10  h-full '>
+        <motion.div 
+            initial={{opacity:0, y:10,x:-100}}
+            whileInView={{opacity:1,y:0,x:0}}
+            viewport={{once:true}} 
+            transition={{duration:1,delay:0.5}}
+    
+        className='w-full py-2   sm:py-10  h-full '>
             <h3 className='text-[#CBFC01] text-center lg:text-left  sm:py-0 text-4xl md:text-3xl font-bold lg:text-xl'>Benefits</h3>
             <h2 className='text-[1.5rem] text-center pt-5 md:pt-2 leading-none lg:text-left md:text-[3.3rem] tracking-tight font-semibold'>We have many </h2>
             <h2 className='text-[1.5rem] text-center font-semibold  lg:text-left leading-none md:text-[3.3rem] tracking-tight'>users all over the </h2>
@@ -25,13 +35,13 @@ function Map() {
              
             </div>
 
-        </div>
+        </motion.div>
 
 
 
 
         <div className='h-full w-full '>
-            <img className='w-full h-full object-contain' src="/public/images/map.png" alt="" />
+            <img className='w-full h-full object-contain' src={abc} alt="" />
 
         </div>
     </div>

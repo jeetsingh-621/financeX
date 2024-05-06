@@ -1,10 +1,11 @@
 import { useGSAP } from "@gsap/react";
-import { motion } from "framer-motion";
+import { cubicBezier, easeIn, motion } from "framer-motion";
 import gsap from "gsap";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function Ourservices() {
+  
   
   const card = [{
     h2:"Checking accounts", para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor", btn:false
@@ -24,8 +25,8 @@ function Ourservices() {
   
   return (
     <div className=" lg:w-full  px-2 sm:px-4 lg:px-4 pl-0   lg:py-10  flex  flex-shrink-0 flex-wrap  ">
-      <motion.div  initial={{opacity:0, y:20}}
-         whileInView={{opacity:1,y:0}}
+      <motion.div  initial={{opacity:0, y:10,x:-100}}
+         whileInView={{opacity:1,y:0,x:0}}
          viewport={{once:true}} 
          transition={{duration:1,delay:0.5}} className=" services w-full sm:w-fit h-fit px-0 md:mx-auto md:text-center lg:mx-0 lg:text-left ">
         <motion.h2
@@ -47,10 +48,10 @@ function Ourservices() {
       </motion.div>
 
       {card.map((item,index)=><motion.div 
-         initial={{opacity:0 }}
-         whileInView={{opacity:1}}
+         initial={{opacity:0,scale:0 }}
+         whileInView={{opacity:1,scale:1}}
          viewport={{once:true}} 
-         transition={{duration:0.5,delay:0.8}}
+         transition={{duration:1,delay:0.4,ease:[0.22,1,0.36,1]}}
       className={`card w-full max-w-[350px] mx-auto sm:mx-0  hover:bg-[#2E2E2E] duration-300  ${index === 0 ? "lg:ml-12 xl:ml-52 sm:ml-0 " :"bg-[#151515]"} ${index===1? "lg:ml-32 xl:ml-0":"" } ${index==2?"xl:ml-[18rem] lg:ml-0 md:ml-0 " :""} ${index===4?"md:mx-auto lg:ml-0 ":""} border-[0.1px] border-gray-800 h-[22rem] p-7 bg-[#151515] ${index===3?"lg:ml-32 xl:ml-0":""}`}>
         
         <h6  className={`  w-12 h-1 bg-white my-4`}></h6> 
