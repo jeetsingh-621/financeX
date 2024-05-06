@@ -7,6 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 function Ourservices() {
   
   
+  
   const card = [{
     h2:"Checking accounts", para:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor", btn:false
   },
@@ -24,7 +25,7 @@ function Ourservices() {
   },]
   
   return (
-    <div className=" lg:w-full  px-2 sm:px-4 lg:px-4 pl-0   lg:py-10  flex  flex-shrink-0 flex-wrap  ">
+    <motion.div className=" lg:w-full  px-2 sm:px-4 lg:px-4 pl-0   lg:py-10  flex  flex-shrink-0 flex-wrap  ">
       <motion.div  initial={{opacity:0, y:10,x:-100}}
          whileInView={{opacity:1,y:0,x:0}}
          viewport={{once:true}} 
@@ -68,7 +69,7 @@ function Ourservices() {
 )}
       
 
-    </div>
+    </motion.div>
   );
 }
 

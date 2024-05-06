@@ -4,9 +4,11 @@ import { LuMapPin } from "react-icons/lu";
 import { TfiWorld } from "react-icons/tfi";
 import { GiNetworkBars } from "react-icons/gi";
 import Frame4 from '../../public/Images/Frame4.png';
+import { easeInOut, motion } from "framer-motion";
 
 
 function Realtime() {
+  
 
  const data = [{ icon:"LuMapPin",  h2:"Local business" , h3:"finance", p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut  "},
   {icon:"TfiWorld",h2:"Build for global" , h3:"payments", p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit ut  "},
@@ -16,7 +18,12 @@ function Realtime() {
   return (
     <div className="w-full   px-2 md:px-0 lg:px-0  lg:py-0  py-1">
       <div className="w-full p-2 md:px-4 lg:px-4 h-1/2  flex flex-col lg:flex-row flex-shrink-0 ">
-        <div className="lg:w-1/2 w-full">
+        <motion.div
+           initial={{opacity:0, y:10,x:-100}}
+           whileInView={{opacity:1,y:0,x:0}}
+           viewport={{once:true}} 
+           transition={{duration:1,delay:0.5}}
+         className="lg:w-1/2  w-full">
           <h2 className="text-[#CBFC01] my-0  text-center lg:text-left font-bold text-4xl md:text-3xl lg:text-xl">
             Our Services
           </h2>
@@ -33,9 +40,14 @@ function Realtime() {
             <button>Get Started</button>
             <FaArrowRightLong />
           </div>
-        </div>
+        </motion.div>
 
-        <div className=" sm:w-1/2  w-full flex sm:justify-end justify-center h-full md:md-2  mt-10 mb-56 sm:mb-0 sm:mt-0 relative">
+        <motion.div
+         initial={{opacity:0, y:10,x:100}}
+         whileInView={{opacity:1,y:0,x:0}}
+         viewport={{once:true}} 
+         transition={{duration:1,delay:0.5}}
+        className=" sm:w-1/2  w-full flex sm:justify-end justify-center h-full md:md-2  mt-10 mb-56 sm:mb-0 sm:mt-0 relative">
           <div className="lg:w-[22rem] md:w-[18rem] md:hidden md:h-[18rem] hidden lg:block lg:h-[22rem] w-[10rem] h-[10rem]  rounded-full bg-[#CBFC01]">
             {" "}
           </div>
@@ -47,7 +59,7 @@ function Realtime() {
               alt=""
             />
           </div>
-        </div>
+        </motion.div>
       </div>
 
 
@@ -56,7 +68,12 @@ function Realtime() {
 
 
       <div className="w-full h-full px-2 md:px-4 lg:px-4  flex flex-shrink-0 flex-wrap justify-center my-10 ">
-        {data.map((item,index)=><div key={index} className={`max-w-[400px] w-full  duration-300   hover:bg-[#2E2E2E] bg-[#151515] py-8 lg:py-12 px-4 border-[0.5px] border-gray-800`}>
+        {data.map((item,index)=><motion.div
+           initial={{opacity:0, scale:0}}
+           whileInView={{opacity:1,scale:1}}
+           viewport={{once:true}} 
+           transition={{duration:1,delay:0.5,ease:[0.32, 0, 0.67, 0]}}
+        key={index} className={`max-w-[400px] w-full  duration-300   hover:bg-[#2E2E2E] bg-[#151515] py-8 lg:py-12 px-4 border-[0.5px] border-gray-800`}>
             <div className={`sm:w-12 w-14 h-14 sm:h-12 bg-white  mb-2 sm:text-xl text-2xl font-bold text-black flex items-center justify-center`}>
                 {item.icon === "LuMapPin" && < LuMapPin/>} 
                 {item.icon ==="TfiWorld"&& <TfiWorld />}
@@ -74,7 +91,7 @@ function Realtime() {
             </div>
 
 
-        </div>
+        </motion.div>
       )}
 
       </div>

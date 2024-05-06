@@ -6,10 +6,13 @@ import images from '../../public/Images/image.png'
 import image1 from '../../public/Images/image1.png'
 import image2 from '../../public/Images/image2.png'
 import image3 from '../../public/Images/image3.png'
+import { motion } from "framer-motion";
+
 
 
 
 function Globalslider() {
+  
   var settings = {
     dots: true,
     className: "center",
@@ -80,7 +83,12 @@ function Globalslider() {
   ]
 
   return (
-    <div className="w-full  lg:my-20 my-6  text-black py-5 md:py-10 bg-[#cafc01e4]">
+    <motion.div 
+    initial={{opacity:0,y:100}}
+    whileInView={{opacity:1,y:0}}
+    viewport={{once:true}} 
+    transition={{duration:1,delay:0.8}}
+    className="w-full  lg:my-20 my-6  text-black py-5 md:py-10 bg-[#cafc01e4]">
       <div className="w-full px-2  lg:px-4 sm:px-2 my-2  sm:my-0 lg:my-0 font-bold ">
         <h2 className=" text-4xl my-0 md:px-2 tracking-tight text-center md:text-3xl  lg:text-left lg:text-xl">Our services</h2>
         <h1 className="text-[1.5rem] text-center tracking-tight lg:text-left sm:text-[3.3rem] mt-7 sm:mt-0 font-semibold leading-none">
@@ -130,7 +138,7 @@ function Globalslider() {
         {/* </div> */}
 
       </div>
-    </div>
+    </motion.div>
   );
 }
 

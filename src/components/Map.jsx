@@ -21,17 +21,33 @@ function Map() {
             <p className='lg:w-2/3 md:px-28 lg:px-0 leading-tight md:py-5 w-full text-center lg:text-left my-12 md:text-md md:leading-tight md:text-gray-300 sm:my-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna </p>
 
             <div className='lg:w-[70%] md:px-20 lg:px-0   w-full text-center items-center justify-between flex md:my-5 lg:my-10 my-10'>
-                <div className=''>
+                <motion.div
+                      initial={{opacity:0, scale:0}}
+                      whileInView={{opacity:1,scale:1}}
+                      viewport={{once:true}} 
+                      transition={{duration:1,delay:0.5}}
+                className=''>
                     <h2 className='text-lg md:text-xl lg:text-2xl font-bold'>10M <span className='text-[#CBFC01]'>+</span></h2>
                     <h4 className='text-[#CBFC01] text-sm sm:text-lg  text-left'>user active</h4>
-                </div>
-                <div className=''>
+                </motion.div>
+                <motion.div 
+                      initial={{opacity:0, scale:0}}
+                      whileInView={{opacity:1,scale:1}}
+                      viewport={{once:true}} 
+                      transition={{duration:1,delay:0.5}}
+                className=''>
                     <h2 className='text-lg md:text-xl lg:text-2xl font-bold'>30 <span className='text-[#CBFC01]'>+</span></h2>
                     <h4 className='text-[#CBFC01] text-sm sm:text-lg  text-left'>country</h4>
-                </div>  <div className=''>
+                </motion.div> 
+                 <motion.div
+                   initial={{opacity:0, scale:0}}
+                   whileInView={{opacity:1,scale:1}}
+                   viewport={{once:true}} 
+                   transition={{duration:1,delay:0.5}}
+                 className=''>
                     <h2 className='text-lg md:text-xl lg:text-2xl font-bold'>$50M <span className='text-[#CBFC01]'>+</span></h2>
                     <h4 className='text-[#CBFC01] text-sm sm:text-lg  text-left'>Transaction</h4>
-                </div>
+                </motion.div>
              
             </div>
 
@@ -40,10 +56,15 @@ function Map() {
 
 
 
-        <div className='h-full w-full '>
+        <motion.div 
+              initial={{opacity:0, y:10,x:100}}
+              whileInView={{opacity:1,y:0,x:0}}
+              viewport={{once:true}} 
+              transition={{duration:1,delay:0.5}}
+        className='h-full w-full '>
             <img className='w-full h-full object-contain' src={map} alt="" />
 
-        </div>
+        </motion.div>
     </div>
   )
 }

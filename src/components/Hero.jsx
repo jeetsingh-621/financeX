@@ -4,16 +4,29 @@ import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
 import frame from '../../public/Images/Frame.png';
 import Ellipse from '../../public/Images/Ellipse.png';
+import { motion } from 'framer-motion';
+// import ScrollTrigger from 'react-scroll-trigger';
 
 
 
 function Hero() {
+    
+    // gsap.registerPlugin(ScrollTrigger);
     useGSAP(()=>{
         gsap.from('.left',{
             opacity:0,
             duration:1.5,
             x:-200,
-            delay:0.5
+            delay:0.5,
+            // scrollTrigger:{
+            //     trigger:'.left',
+            //     scroller:"body",
+            //     start:'top 40%',
+            //     end:'bottom 80%',
+            //     scrub:true,
+            //     markers:true
+            // }
+
         })
         gsap.from('.right',{
             opacity:0,
