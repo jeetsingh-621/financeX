@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
-import image from '../../public/Images/image.png'
+import images from '../../public/Images/image.png'
 
 
 
@@ -58,7 +58,7 @@ function Globalslider() {
 
 
   const data = [
-    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: {image}, h4: "Ranveer", h6: "Webflow Development" },
+    { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: images, h4: "Ranveer", h6: "Webflow Development" },
     { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image1.png", h4: "Mahesh", h6: "CEO" },
     { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image2.png", h4: "Tony stark", h6: "Webflow Development" },
     { para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementumfacilisis leo, vel", image: "/public/images/image3.png", h4: "Ranveer", h6: "CEO" },
