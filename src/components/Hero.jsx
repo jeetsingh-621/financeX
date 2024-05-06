@@ -2,7 +2,9 @@ import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
-import frame from '../../public/Images/Frame.png'
+import frame from '../../public/Images/Frame.png';
+import Ellipse from '../../public/Images/Ellipse.png';
+
 
 
 function Hero() {
@@ -58,7 +60,7 @@ function Hero() {
                 <img className='sm:w-[38rem]  absolute z-[1] md:-left-28 xl:top-6  xl:-left-12 md:top-2 top-0 h-fit   object-cover' src={frame} alt="" />
                 <img className='sm:w-[38rem]  object-cover top-12 absolute bottom-24 md:top-16 lg:top-28 md:-left-28  xl:-left-12   left-0 ' src={frame} alt="" />
             </div>
-            <img  className='hidden md:block sm:w-[20rem] md:w-[14rem]  lg:w-[23rem] w-[14rem] object-cover h-fit' src="/public/images/Ellipse.png" alt="" />
+            <img  className='hidden md:block sm:w-[20rem] md:w-[14rem]  lg:w-[23rem] w-[14rem] object-cover h-fit' src={Ellipse} alt="" />
 
 
 
