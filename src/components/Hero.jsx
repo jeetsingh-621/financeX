@@ -54,10 +54,10 @@ function Hero() {
 
         <div data-scroll  className='right w-full  sm:w-1/2 py-10  ml-2 sm:ml-0  flex justify-end relative'>
             <div className='w-full  h-full absolute -left-5 sm:left-28 '>
-                <img className='sm:w-[38rem]  absolute z-[1] md:-left-28 xl:top-6  xl:-left-12 md:top-2 top-0 h-fit   object-cover' src="public/images/Frame.png" alt="" />
-                <img className='sm:w-[38rem]  object-cover top-12 absolute bottom-24 md:top-16 lg:top-28 md:-left-28  xl:-left-12   left-0 ' src="public/images/Frame.png" alt="" />
+                <img className='sm:w-[38rem]  absolute z-[1] md:-left-28 xl:top-6  xl:-left-12 md:top-2 top-0 h-fit   object-cover' src="/public/images/Frame.png" alt="" />
+                <img className='sm:w-[38rem]  object-cover top-12 absolute bottom-24 md:top-16 lg:top-28 md:-left-28  xl:-left-12   left-0 ' src="/public/images/Frame.png" alt="" />
             </div>
-            <img  className='hidden md:block sm:w-[20rem] md:w-[14rem]  lg:w-[23rem] w-[14rem] object-cover h-fit' src="public/images/Ellipse.png" alt="" />
+            <img  className='hidden md:block sm:w-[20rem] md:w-[14rem]  lg:w-[23rem] w-[14rem] object-cover h-fit' src="/public/images/Ellipse.png" alt="" />
 
 
 
